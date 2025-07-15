@@ -1,4 +1,4 @@
-FROM ubuntu:lunar
+FROM ubuntu:jammy
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get update -y
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y curl gcc git make language-pack-ja fontconfig fonts-ipafont
