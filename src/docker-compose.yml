@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  nginx:
+    image: dockerhubのユーザー名/my-nginx:タグ名（例 my-nginx:jammy)
+    container_name: my-nginx2
+    hostname: localhost
+    ports:
+      - 8080:80
+    volumes:
+      - ./nginx/log:/var/log/nginx
+      - ./nginx/conf.d:/etc/nginx/conf.d
+      - ./src:/var/www/html
